@@ -1,0 +1,160 @@
+* {
+  //border: 1px white solid;
+  margin:0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-text-col: #FFFFFF;
+}
+
+
+body {
+  background: linear-gradient(
+    black 90%,
+    #353535
+  );
+  padding: 45px 0;
+}
+
+#welcome-section {
+  height: 100vh;
+}
+.welcome-title {
+  margin-top: 30vh;
+  font-family: Trebuchet MS, sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  color: var(--main-text-col);
+}
+.welcome-subtitle {
+  padding-top: 10vh;
+  font-family: Trebuchet MS, sans-serif;
+  font-size: 2.25rem;
+  text-align: center;
+  color: var(--main-text-col);
+}
+
+nav {
+  position: fixed;
+  background: black;
+  width:100%;
+  top: 0;
+}
+navbar {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 0 100px;
+  width: 85%;
+  max-width: 850px;
+  margin: auto;
+  padding: 8px 0;
+}
+.nav-link {
+  color: var(--main-text-col);
+  font-family: Trebuchet MS, sand-serif;
+  text-decoration: none;
+  font-weight:normal;
+  font-size:0.9rem;
+  opacity: 80%;
+}
+
+hr {
+  width:95%;
+  max-width:1000px;
+  height: 1px;
+  margin: 5px auto 0px auto;
+  border: 0;
+  background: linear-gradient(
+    90deg,
+  transparent,
+  white 5%,
+  white 95%,
+  transparent);
+}
+
+.project-section-title {
+  font-family: Trebuchet MS, sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  color: var(--main-text-col);
+}
+.project-title {
+  padding: 10px 10px 0px 5px;
+  font-size: 1.5rem;
+  font-family: Trebuchet MS, sans-serif;
+}
+.project-skills {
+  padding: 0px 10px 0px 5px;
+  font-family: Trebuchet MS, sans-serif;
+  font-style: italic;
+  font-size: 0.9rem;
+  o pacity: 70%;
+}
+#projects {
+  max-width:1000px;
+  padding: 50px 0 100px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin: auto;
+  justify-content: center;
+}
+.project-tile {
+  height:300px;
+  width:100%;
+  max-width: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  background: linear-gradient(
+    45deg,
+  lightgrey,
+darkgrey)
+}
+.project-box:hover {
+  outline: 3px var(--main-text-col) solid;
+}
+.project-link {
+  width:100%;
+  height:100%;
+  color: transparent;
+  z-index:1;
+}
+
+#socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
+  padding-bottom: 20px;
+}
+.fa {
+  color: var(--main-text-col);
+  width: min(6vw,80px);
+  height: min(6vw,80px);
+  font-size: min(6vw,80px);
+  text-align: center;
+  text-decoration: none;
+}
+
+@media (min-width:640px) {
+  .welcome-title {
+    font-size: 4rem;
+  }
+  .welcome-subtitle {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width:1000px) {
+  .welcome-title {
+    font-size: 5.2rem;
+  }
+  .welcome-subtitle {
+    font-size: 3.9rem;
+  }
+}
