@@ -129,14 +129,14 @@ darkgrey)
   display: flex;
   align-items: center;
   justify-content: center;
-  gap:10px;
+  gap: min(10vw,50px);
   padding-bottom: 20px;
 }
 .fa {
   color: var(--main-text-col);
-  width: min(6vw,80px);
-  height: min(6vw,80px);
-  font-size: min(6vw,80px);
+  width: min(20vw,100px);
+  height: min(20vw,100px);
+  font-size: min(20vw,100px);
   text-align: center;
   text-decoration: none;
 }
