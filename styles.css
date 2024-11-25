@@ -115,7 +115,7 @@ hr {
   lightgrey,
 darkgrey)
 }
-.project-box:hover {
+.project-tile:hover {
   outline: 3px var(--main-text-col) solid;
 }
 .project-link {
